@@ -1,94 +1,54 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DIE HARD - 35th Anniversary</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap');
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #0b0b0b;
-      color: #e0e0e0;
-      overflow-x: hidden;
-    }
-    header {
-      height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)), 
-                  url('https://images.unsplash.com/photo-1635362356687-91820b2b7fd8?auto=format&fit=crop&q=80') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-    }
-    .logo {
-      width: 420px;
-      max-width: 90%;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 9vw;
-      letter-spacing: 8px;
-      color: #ff0000;
-      text-shadow: 0 0 20px rgba(255,0,0,0.7);
-      margin: 0;
-    }
-    .tagline {
-      font-size: 2.2rem;
-      margin: 15px 0;
-      font-weight: 700;
-    }
-    .details {
-      font-size: 1.4rem;
-      margin-bottom: 40px;
-    }
-    .btn {
-      padding: 15px 40px;
-      background: #ff0000;
-      color: white;
-      font-size: 1.3rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-    .btn:hover { background: #cc0000; transform: scale(1.05); }
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Die_Hard_%281988_film_logo.png" alt="Die Hard Logo" class="logo">
+    <h1>DIE HARD</h1>
+    <p class="tagline">40 FLOORS. 12 TERRORISTS. 1 COP.</p>
+    <p class="details">DECEMBER 25 – NAKATOMI PLAZA</p>
+    <button class="btn" onclick="alert('Yippee-ki-yay! Coming soon to 4K Blu-ray.')">WATCH TRAILER</button>
+  </header>
 
-    section {
-      padding: 80px 10%;
-      text-align: center;
-    }
-    #quote {
-      background: #111;
-      font-size: 2.5rem;
-      font-style: italic;
-      color: #ff0000;
-    }
-    #synopsis { background: #080808; }
-    #synopsis p { max-width: 900px; margin: 0 auto; line-height: 1.8; font-size: 1.2rem; }
+  <section id="quote">
+    “Now I have a machine gun. Ho-ho-ho.”<br>
+    <strong>— John McClane</strong>
+  </section>
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 40px 10%;
-      background: #0f0f0f;
-    }
-    .gallery img {
-      width: 100%;
-      border: 4px solid #333;
-      transition: transform 0.4s;
-    }
-    .gallery img:hover { transform: scale(1.05); }
+  <section id="synopsis">
+    <h2>SYNOPSIS</h2>
+    <p>
+      New York cop John McClane flies to Los Angeles on Christmas Eve to reconcile with his estranged wife. 
+      When German terrorists seize the Nakatomi Plaza skyscraper, McClane becomes the only hope for the hostages 
+      — barefoot, outgunned, and ready to deliver the ultimate holiday gift: justice.
+    </p>
+    <p class="red" style="margin-top: 30px; font-size: 1.5rem;">
+      The greatest Christmas movie ever made.
+    </p>
+  </section>
 
-    footer {
-      background: #000;
-      padding: 40px;
-      text-align: center;
-      font-size: 0.9rem;
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1635362356687-91820b2b7fd8?auto=format&fit=crop&q=80" alt="McClane in vents">
+    <img src="https://images.unsplash.com/photo-1626819196950-9d5a15d0c59e?auto=format&fit=crop&q=80" alt="Nakatomi Plaza">
+    <img src="https://images.unsplash.com/photo-1634157719366-8e9d6d1fe19e?auto=format&fit=crop&q=80" alt="Explosion scene">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80" alt="Yippee-ki-yay moment">
+  </div>
+
+  <section class="anniversary">
+    <h2>35 YEARS OF AN ACTION CLASSIC</h2>
+    <p>1988 → 2023 and still the ultimate Christmas action movie debate settler.</p>
+  </section>
+
+  <footer>
+    <p>DIE HARD © 1988 Twentieth Century Fox. This is an unofficial fan site.</p>
+    <p>Made with <span class="red">♥</span> by a John McClane fan.</p>
+  </footer>
+
+</body>
+</html>
